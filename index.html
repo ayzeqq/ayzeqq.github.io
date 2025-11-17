@@ -1,54 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ASCII Hamburger</title>
-  <style>
-    :root{
-      --bg:#0b0b0b;
-      --text:#d8d8d8;
-      --panel:#0f1724;
-    }
-    html,body{height:100%;margin:0;}
-    body {
-  background:linear-gradient(180deg,var(--bg),#071019);
-  color:var(--text);
-  font-family: "Courier New", Consolas, monospace;
-  display:grid;
-  place-items:center; /* her yönden ortalar */
-  height:100vh;
-  margin:0;
-}
-    .frame{
-      width:100%;
-      max-width:1200px;
-      background:var(--panel);
-      border-radius:10px;
-      padding:18px;
-      box-shadow:0 18px 40px rgba(0,0,0,0.6);
-      overflow:auto;
-    }
-    pre.ascii{
-      white-space:pre;
-      font-family: "Courier New", Consolas, monospace;
-      font-size:10px;
-      line-height:10px;
-      margin:0;
-      color:var(--text);
-    }
-    /* responsive increase font on large screens */
-    @media (min-width:1400px){
-      pre.ascii{ font-size:12px; line-height:12px; }
-    }
-    @media (max-width:420px){
-      pre.ascii{ font-size:6px; line-height:6px; }
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nebula Burger & Chicken</title>
+<style>
+  :root {
+    --bg: #0a111a;
+    --text: #cbd5e1;
+  }
+
+  body {
+    background: linear-gradient(180deg, var(--bg), #071019);
+    color: var(--text);
+    font-family: "Courier New", Consolas, monospace;
+    display: grid;
+    place-items: center; /* ORTALAMA */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  pre {
+    white-space: pre;
+    font-size: 9px;       /* ASCII'nin oranı bozulmasın */
+    line-height: 9px;
+    letter-spacing: 0px;
+    text-align: center;   /* İsteğe bağlı: satır içi hizalama */
+  }
+</style>
 </head>
 <body>
-  <main class="frame" role="main" aria-label="ASCII art">
-<pre class="ascii">
+
+<pre>
 ....................................................................................................
 ....................................................................................................
 ....................................................................................................
@@ -68,8 +52,8 @@
 ....................................................................................................
 .....................................---=--=*#%+=-=%*=+*+==-=::.....................................
 ..............................::-#%@%-=@%*::#%#%@@%#%@%#%@@@%+#%%+*=................................
-.........................-*=-+*#%%%%%%%#%%#%%+-*#@*#++**@%@#:*@@@%+#%=#@*-:.........................
-......................:+%%%*+##-+%%%#+-#@%%%##--*@%%%@@@+:+@@@@@##*#@@%*#@%#=-:.....................
+.........................-*=-+*#%%%%%%%#%%#%%+-*#@*#++**@%@#:*@@@%+#%=#@*-:......................... 
+......................:+%%%*+##-+%%%#+-#@%%%##--*@%%%@@@+:+@@@@@##*#@@%*#@%#=-:..................... 
 ..................:####==%%%%%%%%##+***#+=#%####%%#:+@@@@@@@%@@@@@%%%=#@#+@@%@%#=...................
 .................=#**##*+*+=*.:##***.=**#######%%%%%@@@@@@@@=:*@@@%::#@@@@*@@@@@*+%:................
 ..............-=##*#+:+++==++++++++****+***==#####%%%%%=-#@@@@@@@@@@%@@@@@#+%@%=*#@#*:..............
@@ -132,6 +116,6 @@
 ....................................................................................................
 ....................................................................................................
 </pre>
-  </main>
+
 </body>
 </html>
