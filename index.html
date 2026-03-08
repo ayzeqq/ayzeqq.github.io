@@ -11,15 +11,17 @@
   }
 
   body {
-    background: linear-gradient(180deg, var(--bg), #071019);
-    color: var(--text);
-    font-family: "Courier New", Consolas, monospace;
-    display: grid;
-    place-items: center; /* ORTALAMA */
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
+  background: linear-gradient(180deg, var(--bg), #071019);
+  color: var(--text);
+  font-family: "Courier New", Consolas, monospace;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;    /* height → min-height */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;   /* yatay taşmayı engelle */
+  box-sizing: border-box;
+}
 
   pre {
     white-space: pre;
@@ -98,7 +100,9 @@
 ....................................................................................................
 </pre>
 <a href="nebula_menu.pdf">Menüyü Görüntüle</a>
-<a href="about.html">About</a>
+  
+<!-- <a href="about.html">About</a> -->
+
 <a href="https://maps.app.goo.gl/GCwSMvK17NynvE3q8" 
    target="_blank"
    style="
